@@ -1,2 +1,2 @@
-export * from './todo.repository';
-export * from './todo-list.repository';
+export * from './test.repository';
+export * from './mongo-entity.repository';

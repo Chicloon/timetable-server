@@ -1,5 +1,5 @@
-// Copyright IBM Corp. 2018. All Rights Reserved.
-// Node module: @loopback/example-todo-list
+// Copyright IBM Corp. 2017,2018. All Rights Reserved.
+// Node module: @loopback/example-todo
 // This file is licensed under the MIT License.
 // License text available at https://opensource.org/licenses/MIT
 
@@ -8,11 +8,12 @@ import {ApplicationConfig} from '@loopback/core';
 import {RestExplorerComponent} from '@loopback/rest-explorer';
 import {RepositoryMixin} from '@loopback/repository';
 import {RestApplication} from '@loopback/rest';
+import {ServiceMixin} from '@loopback/service-proxy';
 import * as path from 'path';
 import {MySequence} from './sequence';
 
 export class TodoListApplication extends BootMixin(
-  RepositoryMixin(RestApplication),
+  ServiceMixin(RepositoryMixin(RestApplication)),
 ) {
   constructor(options: ApplicationConfig = {}) {
     super(options);
