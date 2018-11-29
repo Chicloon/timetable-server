@@ -1,6 +1,6 @@
 "use strict";
-// Copyright IBM Corp. 2017,2018. All Rights Reserved.
-// Node module: @loopback/example-todo
+// Copyright IBM Corp. 2018. All Rights Reserved.
+// Node module: @loopback/example-todo-list
 // This file is licensed under the MIT License.
 // License text available at https://opensource.org/licenses/MIT
 function __export(m) {
@@ -8,6 +8,5 @@ function __export(m) {
 }
 Object.defineProperty(exports, "__esModule", { value: true });
 __export(require("./db.datasource"));
-__export(require("./geocoder.datasource"));
-__export(require("./mongodb.datasource"));
+__export(require("./pg.datasource"));
 //# sourceMappingURL=index.js.map

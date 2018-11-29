@@ -1,0 +1,9 @@
+{
+  "name": "pg",
+  "connector": "postgresql",
+  "host": "elmer.db.elephantsql.com",
+  "port": 5432,
+  "database": "svltmtog",
+  "username": "svltmtog",
+  "password": "pdiWWmiZh9-yaxbmqXbFzdooRpQdFr2c"
+}

@@ -2,5 +2,6 @@
 // Node module: @loopback/example-todo-list
 // This file is licensed under the MIT License.
 // License text available at https://opensource.org/licenses/MIT
-export * from './test.repository';
-export * from './mongo-entity.repository';
+
+export * from './todo.repository';
+export * from './todo-list.repository';

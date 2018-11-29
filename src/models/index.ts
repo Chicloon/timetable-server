@@ -1,7 +1,8 @@
-// Copyright IBM Corp. 2017,2018. All Rights Reserved.
-// Node module: @loopback/example-todo
+// Copyright IBM Corp. 2018. All Rights Reserved.
+// Node module: @loopback/example-todo-list
 // This file is licensed under the MIT License.
 // License text available at https://opensource.org/licenses/MIT
 
-export * from './test.model';
-export * from './mongo-entity.model';
+export * from './todo.model';
+export * from './todo-list.model';
+export * from './bus-route.model';

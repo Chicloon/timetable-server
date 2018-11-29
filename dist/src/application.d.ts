@@ -10,11 +10,6 @@ declare const TodoListApplication_base: (new (...args: any[]) => {
     mountComponentBooters(component: import("@loopback/context/dist/src/value-promise").Constructor<{}>): void;
 }) & (new (...args: any[]) => {
     [x: string]: any;
-    serviceProvider<S>(provider: import("@loopback/service-proxy/dist/src/mixins/service.mixin").Class<import("@loopback/context/dist/src/provider").Provider<S>>): void;
-    component(component: import("@loopback/service-proxy/dist/src/mixins/service.mixin").Class<{}>): void;
-    mountComponentServices(component: import("@loopback/service-proxy/dist/src/mixins/service.mixin").Class<{}>): void;
-}) & (new (...args: any[]) => {
-    [x: string]: any;
     repository(repo: import("@loopback/repository/dist/src/common-types").Class<import("@loopback/repository/dist/src/repositories/repository").Repository<any>>): void;
     getRepository<R extends import("@loopback/repository/dist/src/repositories/repository").Repository<any>>(repo: import("@loopback/repository/dist/src/common-types").Class<R>): Promise<R>;
     dataSource(dataSource: import("loopback-datasource-juggler/types/datasource").DataSource | import("@loopback/repository/dist/src/common-types").Class<import("loopback-datasource-juggler/types/datasource").DataSource>, name?: string | undefined): void;

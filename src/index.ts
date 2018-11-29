@@ -1,10 +1,13 @@
-// Copyright IBM Corp. 2017,2018. All Rights Reserved.
-// Node module: @loopback/example-todo
+// Copyright IBM Corp. 2018. All Rights Reserved.
+// Node module: @loopback/example-todo-list
 // This file is licensed under the MIT License.
 // License text available at https://opensource.org/licenses/MIT
 
 import {TodoListApplication} from './application';
 import {ApplicationConfig} from '@loopback/core';
+import {dsMigrate, dsUpdate} from './migrate';
+
+export {TodoListApplication};
 
 export async function main(options: ApplicationConfig = {}) {
   const app = new TodoListApplication(options);
@@ -13,12 +16,10 @@ export async function main(options: ApplicationConfig = {}) {
 
   const url = app.restServer.url;
   console.log(`Server is running at ${url}`);
+
+  // The call to dsMigrate(), or replace with dsUpdate()
+
+  // await dsMigrate(app);
+  await dsUpdate(app);
   return app;
 }
-
-// re-exports for our benchmark, not needed for the tutorial itself
-export {TodoListApplication};
-
-export * from './models';
-export * from './repositories';
-export * from '@loopback/rest';

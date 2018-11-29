@@ -1,3 +1,2 @@
 export * from './db.datasource';
-export * from './geocoder.datasource';
-export * from './mongodb.datasource';
+export * from './pg.datasource';
