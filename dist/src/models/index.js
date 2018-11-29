@@ -10,4 +10,5 @@ Object.defineProperty(exports, "__esModule", { value: true });
 __export(require("./todo.model"));
 __export(require("./todo-list.model"));
 __export(require("./bus-route.model"));
+__export(require("./waypoint.model"));
 //# sourceMappingURL=index.js.map

@@ -9,4 +9,6 @@ function __export(m) {
 Object.defineProperty(exports, "__esModule", { value: true });
 __export(require("./todo.repository"));
 __export(require("./todo-list.repository"));
+__export(require("./bus-route.repository"));
+__export(require("./waypoint.repository"));
 //# sourceMappingURL=index.js.map
